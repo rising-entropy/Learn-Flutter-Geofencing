@@ -44,6 +44,9 @@ class _MyHomePageState extends State<MyHomePage> {
   String geofenceStatus = '';
   bool isReady = false;
   Position? position;
+
+  Map theStatus = {};
+
   @override
   void initState() {
     super.initState();
@@ -127,6 +130,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         setState(() {
                           geofenceStatus = status.toString();
                         });
+
                       });
                     }
                   },
